@@ -1,7 +1,7 @@
 {
-  "author": "Lruihao (https://github.com/Lruihao)",
+  "author": "attajak (https://github.com/attajak)",
   "bugs": {
-    "url": "https://github.com/hugo-fixit/hugo-fixit-starter/issues"
+    "url": "https://github.com/attajak/hugo-fixit/issues"
   },
   "comments": {
     "dependencies": {},
@@ -10,20 +10,20 @@
   "dependencies": {},
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
   "devDependencies": {},
-  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter#readme",
+  "homepage": "https://github.com/attajak/hugo-fixit#readme",
   "license": "MIT",
   "main": "index.js",
-  "name": "hugo-fixit-starter",
+  "name": "hugo-fixit",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hugo-fixit/hugo-fixit-starter.git"
+    "url": "git+https://github.com/attajak/hugo-fixit.git"
   },
   "scripts": {
-    "build": "hugo -v --gc --minify",
+    "build": "hugo -v --gc --minify --logLevel info",
     "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
     "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
     "server:production": "npm run server -- --environment production",
-    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@latest && hugo mod tidy"
+    "update:modules": "hugo mod get -u && hugo mod tidy"
   },
   "version": "1.0.0"
 }
