@@ -38,15 +38,15 @@ disableThemeInject = false
 
 # Author Configuration
 [author]
-  name = "Lruihao"
-  email = "1024@lruihao.cn"
-  link = "https://github.com/Lruihao"
+  name = "Attajak Janrak"
+  email = "janrak@gmail.com"
+  link = "https://github.com/attajak"
   avatar = ""
 
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
-  repo = ""
+  repo = "https://github.com/attajak/hugo-fixit"
   branch = "main"
   # the content directory path relative to the root of the repository
   dir = "content"
@@ -113,9 +113,9 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/hugo-fixit-starter/images/fixit.min.svg"
+    logo = "/hugo-fixit/images/fixit.min.svg"
     # title name
-    name = ""
+    name = "Hugo-FixIt"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -131,9 +131,9 @@ disableThemeInject = false
 
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
-  enable = false
-  sticky = false
-  showHome = false
+  enable = true
+  sticky = true
+  showHome = true
 
 # Footer config
 [footer]
@@ -143,7 +143,7 @@ disableThemeInject = false
   # whether to show the author
   author = true
   # Site creation year
-  since = 2021
+  since = 2024
   # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
   gov = ""
   # ICP info only in China (HTML format is supported)
@@ -157,18 +157,18 @@ disableThemeInject = false
     themeLogo = true
   # FixIt 0.2.17 | CHANGED Site creation time
   [footer.siteTime]
-    enable = false
+    enable = true
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = ""
-    value = "" # e.g. "2021-12-18T16:15:22+08:00"
+    value = "2021-12-18T16:15:22+07:00" # e.g. "2021-12-18T16:15:22+08:00"
   # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
   [footer.order]
     powered = 0
-    copyright = 0
-    statistics = 0
-    visitor = 0
-    beian = 0
+    copyright = 1
+    statistics = 2
+    visitor = 3
+    beian = 4
 
 # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
 [archives]
@@ -224,13 +224,13 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = "xx@xx.com"
+    gravatarEmail = "janrak@gmail.com"
     # URL of avatar shown in home page
     avatarURL = ""
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = ""
     # title shown in home page (HTML format is supported)
-    title = ""
+    title = "Hugo-FixIt"
     # subtitle shown in home page
     subtitle = "This is my new Hugo FixIt site"
     # whether to use typeit animation for subtitle
@@ -457,8 +457,8 @@ disableThemeInject = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-  enable = false
-  permalink = "https://github.com/hugo-fixit/FixIt"
+  enable = true
+  permalink = "https://github.com/attajak/hugo-fixit"
   title = "View source on GitHub"
   position = "right" # ["left", "right"]
 

@@ -1,23 +1,29 @@
 {
-  "name": "hugo-fixit-starter",
-  "version": "1.0.0",
-  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
-  "main": "index.js",
-  "scripts": {
-    "build": "hugo -v --gc --minify",
-    "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
-    "server:production": "npm run server -- --environment production",
-    "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
-    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@latest && hugo mod tidy"
+  "author": "Lruihao (https://github.com/Lruihao)",
+  "bugs": {
+    "url": "https://github.com/hugo-fixit/hugo-fixit-starter/issues"
   },
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "dependencies": {},
+  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
+  "devDependencies": {},
+  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "hugo-fixit-starter",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hugo-fixit/hugo-fixit-starter.git"
   },
-  "author": "Lruihao (https://github.com/Lruihao)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hugo-fixit/hugo-fixit-starter/issues"
+  "scripts": {
+    "build": "hugo -v --gc --minify",
+    "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0",
+    "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
+    "server:production": "npm run server -- --environment production",
+    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@latest && hugo mod tidy"
   },
-  "homepage": "https://github.com/hugo-fixit/hugo-fixit-starter#readme"
+  "version": "1.0.0"
 }
