@@ -3,10 +3,12 @@
 # See: https://gohugo.io/hugo-modules/configuration/#module-config-imports
 # -------------------------------------------------------------------------------------
 
+# [[imports]]
+  # path = "github.com/hugo-fixit/FixIt"
+# [[imports]]
+  # path = "github.com/hugo-fixit/shortcode-docs-bookmark"
 [[imports]]
-  path = "github.com/hugo-fixit/FixIt"
-[[imports]]
-  path = "github.com/hugo-fixit/shortcode-docs-bookmark"
+  path = "github.com/hugo-fixit/fixit-bundle"
 
 [hugoVersion]
   extended = true
