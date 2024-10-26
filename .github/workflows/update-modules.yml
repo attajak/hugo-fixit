@@ -20,7 +20,7 @@ jobs:
           hugo-version: latest
           extended: true
 
-      - name: Update theme
+      - name: Update modules
         run: hugo mod get -u # github.com/hugo-fixit/FixIt@latest
 
       - name: Tidy go.mod, go.sum
