@@ -8,8 +8,11 @@ on:
       - 'config/**'
       - 'content/**'
       - 'data/**'
+      - 'i18n'
+      - 'layouts/'
       - 'static/**'
       - 'themes/**'
+      - '*.toml'
       - 'go.mod'
       - 'go.sum'
   workflow_run:
@@ -36,6 +39,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+        with:
+          submodules: true
+          fetch-depth: 0
       - name: Cache Hugo resources
         uses: actions/cache@v4
         env:

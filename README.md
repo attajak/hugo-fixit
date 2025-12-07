@@ -1,12 +1,12 @@
-# Hugo FixIt 博客模板（Go）
+# Hugo FixIt Blog Template (Go)
 
-👉 中文 | [English](README.en.md)
+👉 English | [简体中文](README.cn.md)
 
-这是 Hugo 主题 [FixIt](https://github.com/hugo-fixit/FixIt) 的快速启动模板。它使用 [Hugo 模块](https://gohugo.io/hugo-modules/) 功能加载主题。如果你更熟悉 Git，可以 [查看这个模板](https://github.com/hugo-fixit/hugo-fixit-starter1)。
+This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo Modules](https://gohugo.io/hugo-modules/) feature to load the theme. If you favor Git more, you can [check this template](https://github.com/hugo-fixit/hugo-fixit-starter1).
 
-它提供了基本的主题结构和配置。已经设置了 GitHub Actions，可以自动部署博客到 GitHub Pages。此外，还有一个定时任务，每天自动更新主题。
+It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the blog to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
 
-## 目录结构
+## Directory structure
 
 ```bash
 ▸ .github/       # GitHub configuration
@@ -22,16 +22,16 @@
 ▸ go.sum
 ```
 
-## 快速入门
+## Quick Start
 
-完整的快速入门，请参阅此 [页面](https://fixit.lruihao.cn/documentation/getting-started/)。
+For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).
 
-### 准备
+### Prerequisites
 
 - [Go](https://go.dev/dl/)
 - [Hugo](https://gohugo.io/installation/) (extended version)
 
-### 使用模板
+### Use Template
 
 #### CLI
 
@@ -39,85 +39,85 @@
 npx fixit-cli create my-blog
 ```
 
-#### 手动
+#### Manual
 
-1. 点击 [**Use this template**](https://github.com/hugo-fixit/hugo-fixit-starter/generate)，在 GitHub 上创建你的存储库。
+1. Click [**Use this template**](https://github.com/hugo-fixit/hugo-fixit-starter/generate), and create your repository on GitHub.
 
     <img width="913" alt="image" src="https://github.com/hugo-fixit/hugo-fixit-starter1/assets/33419593/d5fbd940-3ffd-4750-b1e6-4e87b50b0696">
 
-2. 存储库创建后，只需克隆并享受吧！
+2. Once the repository is created, just clone and enjoy it!
 
     ```bash
-    # 使用你自己的存储库 URL 进行克隆
+    # Clone with your own repository url
     git clone --recursive https://github.com/<your_name>/<your_blog_repo>.git
     ```
 
 > [!TIP]
-> 仓库名决定了你的 GitHub Pages URL，例如：
+> The repository name determines your GitHub Pages URL, for example:
 >
-> | 仓库名 | GitHub Pages |
+> | Repository Name | GitHub Pages |
 > | :--- | :--- |
 > | `<your_name>.github.io` | `https://<your_name>.github.io/` |
 > | `blog` | `https://<your_name>.github.io/blog/` |
 
-### 启动站点
+### Launching the Site
 
 ```bash
-# 开发环境
+# Development environment
 hugo server
-# 生产环境
+# Production environment
 hugo server -e production
 ```
 
-### 构建站点
+### Build the Site
 
-当你的站点准备部署时，运行以下命令：
+When your site is ready to deploy, run the following command:
 
 ```bash
 hugo
 ```
 
-### 部署到 GitHub Pages
+### Deploy to GitHub Pages
 
 > [!NOTE]
-> 聪明的你可能已经注意到，模板初始化后的第一次 GitHub Actions 自动部署失败了。这是因为你还没有配置 Workflow 权限和 GitHub Pages。
+> You may have noticed that the first automatic deployment of GitHub Actions after the template initialization failed. This is because you have not configured Workflow permissions and GitHub Pages.
 
-1. 转到 Setting => Actions => General => Workflow permissions => 选中 "Read and write permissions"。
-2. GitHub Pages 设置：Setting => Pages => Source: GitHub Actions。
-3. 修改 `config/_default/hugo.toml` 文件中的 `baseURL` 为你的站点 URL。
-4. 提交上一步的修改到 `main` 分支，GitHub Actions 将自动打包并部署站点到 GitHub Pages。
+1. Head to Setting => Actions => General => Workflow permissions => Check "Read and write permissions".
+2. GitHub Pages settings: Setting => Pages => Source: GitHub Actions.
+3. Modify `config/_default/hugo.toml` file `baseURL` to your site URL.
+4. Commit the changes from the previous step to the `main` branch, and GitHub Actions will automatically build and deploy the site to GitHub Pages.
 
-### 更新主题
+### Update Theme
 
-之后，你可以使用以下命令升级主题：
+Afterwards you can upgrade the theme with the following command:
 
 ```bash
-# 手动更新主题
+# Update theme manually
 hugo mod get -u github.com/hugo-fixit/FixIt@latest
 hugo mod tidy
 ```
 
 <details>
-  <summary>通过 NPM 脚本启动</summary>
+  <summary>Start via NPM script</summary>
 
   ```bash
-  # 构建博客
+  # build the blog
   npm run build
-  # 运行带有监视的本地调试服务器
+  # run a local debugging server with watch
   npm run server
-  # 在生产环境中运行本地调试服务器
+  # run a local debugging server in production environment
   npm run server:production
-  # 更新主题子模块
+  # update theme submodules
   npm run update:theme
   ```
 
 </details>
 
-## 故障排除
+## Troubleshooting
 
 <details>
   <summary>remote: Permission to git denied to github-actions[bot].</summary>
-  转到 Setting => Actions => General => Workflow permissions => 选中 "Read and write permissions"。
+  Head to Setting => Actions => General => Workflow permissions => Check "Read and write permissions".
 </details>
 
-<!-- 此项目是使用 [hugo-fixit-starter](https://github.com/hugo-fixit/hugo-fixit-starter) 生成的。 -->
+<!-- This project was generated with [hugo-fixit-starter](https://github.com/hugo-fixit/hugo-fixit-starter). -->
