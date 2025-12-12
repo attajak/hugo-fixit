@@ -69,7 +69,7 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
       - name: Hugo build
-        run: hugo --gc --minify --logLevel info -b '${{ steps.deployment.outputs.page_url }}'
+        run: hugo --gc --minify --logLevel info
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
