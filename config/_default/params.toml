@@ -48,7 +48,7 @@ disableThemeInject = false
 # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
 [gitInfo]
   # e.g. "https://github.com/hugo-fixit/docs"
-  repo = ""
+  repo = "https://github.com/attajak/hugo-fixit"
   branch = "main"
   # the content directory path relative to the root of the repository
   dir = "content"
@@ -133,9 +133,9 @@ disableThemeInject = false
 
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
-  enable = false
-  sticky = false
-  showHome = false
+  enable = true
+  sticky = true
+  showHome = true
   # FixIt 0.3.13 | NEW
   separator = "/"
   capitalize = true
@@ -237,7 +237,7 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = "xx@xx.com"
+    gravatarEmail = "janrak@gmail.com"
     # URL of avatar shown in home page
     avatarURL = ""
     # FixIt 0.2.17 | NEW identifier of avatar menu link
