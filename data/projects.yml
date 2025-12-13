@@ -1,0 +1,24 @@
+- title: Jekyll
+  description: GitHub Pages
+  contentAdapters: true
+  categories:
+    - Jekyll
+  collections:
+    - Static Site Generators
+  totalStars: true # whether to count total stars
+  repos:
+    - attajak/attajak.github.io
+    - attajak/blog
+- title: Hugo
+  description: Hugo static site generators
+  contentAdapters: true
+  categories:
+    - Hugo
+  collections:
+    - Static Site Generators
+  totalStars: true
+  repos:
+    - attajak/attajak.web.app
+    - attajak/attajak.pages.dev
+    - attajak/attajak.vercel.app
+    - attajak/hugo-blox-blog

@@ -1,7 +1,7 @@
 {
   "name": "hugo-fixit-starter",
   "version": "1.0.0",
-  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
+  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo module](https://gohugo.io/hugo-modules/) feature to load the theme.",
   "main": "index.js",
   "private": "true",
   "scripts": {

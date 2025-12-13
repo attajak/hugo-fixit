@@ -1,0 +1,14 @@
+# The sponsor logs data format is as follows
+# currency: [CNY, USD, EUR, ...] https://gohugo.io/functions/lang/formatcurrency/
+# origin: [alipay, bitcoin, paypal, wechatpay, ...]
+
+message: Thanks all!
+currency: THB
+symbol: ฿
+# The sponsor logs inherit the FixIt Timeline events
+logs:
+  - date: "2006-01-02 15:04:05"
+    sponsor: attajak
+    money: 50
+    origin: paypal
+    remark: "Come on!"

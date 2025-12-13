@@ -549,14 +549,27 @@ disableThemeInject = false
 # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
 [customPartials]
   head = [
+    "inject/component-projects.html",
     "inject/fixit-docs-bookmark.html",
-  ]
+    "inject/shortcode-rewards.html",
+    ]
+  menuDesktop = [
+    "inject/translate-menu-desktop.html",
+    ]
+  menuMobile = [
+    "inject/translate-menu-mobile.html",
+    ]
   profile = []
   aside = []
   comment = []
   footer = []
   widgets = []
-  assets = []
+  assets = [
+    "inject/cmpt-flyfish",
+    "inject/cmpt-mdevtools",
+    "inject/cmpt-translate.html",
+    "inject/shortcode-caniuse.html",
+    ]
   postFooterBefore = []
   postFooterAfter = []
 
@@ -915,3 +928,49 @@ disableThemeInject = false
     [page.seo.publisher]
       name = ""
       logoUrl = ""
+
+# FixIt bundle config
+# cmpt-flyfish
+[flyfish]
+  enable = true
+  light = "rgb(0 119 190 / 10%)"
+  dark = "rgb(255 255 255 / 10%)"
+
+# Mobile Devtools config
+[mDevtools]
+  enable = true
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# Auto translation configuration
+# See: https://github.com/xnx3/translate/
+[autoTranslate]
+  enable = false
+  # The translation service provider, ['client.edge', 'translate.service']
+  # See: https://translate.zvo.cn/43086.html
+  service = 'client.edge'
+  # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
+  # See the full language list: https://api.translate.zvo.cn/language.json
+  languages = []
+  # Element IDs that needs to be ignored for translation
+  ignoreID = []
+  # Class names that need to be ignored for translation
+  ignoreClass = []
+  # Tag names that need to be ignored for translation     ignoreTag = []
+  # Whether to detect the local language
+  # If your site itself is multilingual in Hugo, it is not recommended to enable this feature!
+  detectLocalLanguage = false
+
+# Content adapters config for component projects
+[projectsAdapters]
+  enable = true
+  # Whether to show only public repos
+  onlyPublic = true
+  # Default categories and collections
+  categories = []
+  collections = []
+  # Ignore repos in the ignore list
+  ignoreList = []
+  [projectsAdapters.params]
+    hiddenFromHomePage = true
+    # more font matter here ...
