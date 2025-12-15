@@ -5,7 +5,7 @@
 
 [[main]]
   identifier = "archives"
-  parent = ""
+  parent = "posts"
   # you can add extra information before the name (HTML format is supported), such as icons
   pre = ""
   # you can add extra information after the name (HTML format is supported), such as icons
@@ -27,7 +27,7 @@
     type = ""
 [[main]]
   identifier = "categories"
-  parent = ""
+  parent = "posts"
   pre = ""
   post = ""
   name = "Categories"
@@ -38,7 +38,7 @@
     icon = "fa-solid fa-folder-tree"
 [[main]]
   identifier = "tags"
-  parent = ""
+  parent = "posts"
   pre = ""
   post = ""
   name = "Tags"
@@ -47,3 +47,17 @@
   weight = 3
   [main.params]
     icon = "fa-solid fa-tags"
+[[main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+  [main.params]
+    icon = "fa-solid fa-home"
+[[main]]
+  identifier = "posts"
+  name = "Posts"
+  url = "/posts/"
+  weight = 3
+  [main.params]
+    icon = "fa-solid fa-pen"

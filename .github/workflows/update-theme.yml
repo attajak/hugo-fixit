@@ -21,10 +21,8 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
 
-      - name: Update theme
-        run: |
-          hugo mod get -u github.com/hugo-fixit/FixIt@main
-          hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest
+      - name: Update FixIt component
+        run: hugo mod get -u ./...
 
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
@@ -35,5 +33,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(theme): update FixIt version'
+          commit_message: ':arrow_up: Chore(FixIt-bundle): Update FixIt component'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
