@@ -1,6 +1,6 @@
 # Hugo FixIt 博客模板（Go）
 
-👉 中文 | [English](README.md)
+👉 中文 | [English](README.en.md)
 
 这是 Hugo 主题 [FixIt](https://github.com/hugo-fixit/FixIt) 的快速启动模板。它使用 [Hugo 模块](https://gohugo.io/hugo-modules/) 功能加载主题。如果你更熟悉 Git，可以 [查看这个模板](https://github.com/hugo-fixit/hugo-fixit-starter1)。
 
