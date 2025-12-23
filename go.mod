@@ -3,7 +3,7 @@ module github.com/attajak/hugo-fixit
 go 1.19
 
 require (
-	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251221161324-3c7babb5eaac // indirect
+	github.com/hugo-fixit/FixIt v0.4.0-alpha.2.0.20251222083839-1bb21fcbd110 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-translate v1.10.3 // indirect
