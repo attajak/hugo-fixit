@@ -1,4 +1,4 @@
-name: Update theme
+name: Update modules
 
 # Controls when the workflow will run
 on:
@@ -9,12 +9,12 @@ on:
   workflow_dispatch:
 
 jobs:
-  Update-FixIt:
+  Update-modules:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -24,8 +24,11 @@ jobs:
           hugo-version: ${{ vars.HUGO_VERSION || 'latest' }}
           extended: true
 
+      - name: Update Git submodule
+        run: git submodule update --remote --merge
+
       - name: Update FixIt component
-        run: hugo mod get -u ./...
+        run: hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest
 
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
@@ -39,12 +42,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           comment_tag_name: HUGO_FIXIT_COMPONENTS
-          readme_path: 'README.md' # 'README.md,README.en.md'
+          readme_path: 'README.md,README.cn.md,README.en.md'
           # exclude_repos: 'fixit-bundle'
           template: "- [{$repo.name}]({$repo.html_url})\\\n {$repo.description}"
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(FixIt-bundle): Update FixIt component'
+          commit_message: ':arrow_up: Chore(FixIt-bundle): Update FixIt component version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
