@@ -1,3 +1,3 @@
-[submodule "static/favicon"]
-	path = static/favicon
+[submodule "assets/favicon"]
+	path = assets/favicon
 	url = https://github.com/attajak/favicon.git
