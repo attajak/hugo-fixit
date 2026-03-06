@@ -1,6 +1,6 @@
 module github.com/attajak/hugo-fixit
 
-go 1.26
+go 1.25
 
 require (
 	github.com/hugo-fixit/FixIt v0.4.3 // indirect
