@@ -16,7 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/attajak/hugo-fixit.git"
   },
-  "author": "attajak (https://github.com/attajak)",
+  "author": {
+    "name": "attajak",
+    " e-mail": " janrak@gmail.com",
+    " url": " https://github.com/attajak"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/attajak/hugo-fixit/issues"
